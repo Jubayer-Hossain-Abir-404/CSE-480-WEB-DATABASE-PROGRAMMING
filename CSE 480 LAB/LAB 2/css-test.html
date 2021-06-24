@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<style>
+			h1,
+			h2,
+			p{
+				color: red  ;
+			}
+			p.test{
+				color:green;
+			}
+			#test{
+				background-color: yellow;
+				margin: 100px;
+				padding: 20px;
+				border: 1px solid green ;
+			}
+			* {
+				text-align: center;
+			}
+			body p{
+				text-decoration: underline;
+			}
+			body>p{
+				text-decoration: line-through;
+			}
+			h1+p{
+				font-style: italic;
+			}
+			h1 ~ p{
+				color:palegreen;
+				font-weight: bold;
+			}
+			a:link{
+				color:red;
+			}
+			a:visited{
+				color:yellow;
+			}
+			a:hover{
+				color:brown;
+			}
+			a:active{
+				color:blueviolet;
+			}
+			h1:hover ~ p{
+				color: maroon;
+			}
+			p:first-child{
+				background-color: orange;
+			}
+			p:first-child ~ a{
+				background-color: tomato;
+			}
+			body p:first-child{
+				text-align: left;
+			}
+			p::first-letter{
+				font-size: 25px;
+			}
+			p.test::first-letter{
+				font-size: 40px;
+			}
+			p::first-line{
+				color:black;
+			}
+			p::before{
+				content: url('parrot.jpg');
+			}
+			p::after{
+				content: url('parrot.jpg');
+			}
+			h1::selection{
+				color:white;
+				background-color: red;
+			}
+		</style>
+		
+	</head>
+	<body style="font-size: 12px;">
+		<p>Hello World</p>
+
+		<h1 id="test" style="font-size: 4em;">Hello World</h1>
+		<p>Hello World</p>
+
+		<a>test.com</a>
+		<p style="font-size: 2em;">Hello World</p>
+		<p style="font-size: 2em;">Hello World</p>
+
+		<h2 class="test">Hello World</h2>
+		<p class="test">Hello world Paragraph</p>
+
+		<div>
+			<p style="font-size: 1rem;">This is another paragraph</p>
+		</div>
+		<a href="http://www.yahoo.com">Click to navigate google</a>
+
+		
+	</body>
+</html>

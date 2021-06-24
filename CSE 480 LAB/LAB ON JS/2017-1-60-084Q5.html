@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<script>
+		  function time_convert(num)
+      { 
+        var hours = Math.floor(num / 60);  
+        var minutes = num % 60;
+        return hours + " hour:" + minutes + " minutes";         
+      }
+
+      document.write(time_convert(55));
+      document.write("<br />");
+      document.write(time_convert(253));
+      document.write("<br />");
+      document.write(time_convert(756));
+      document.write("<br />");
+
+		
+	</script>
+</body>
+</html>

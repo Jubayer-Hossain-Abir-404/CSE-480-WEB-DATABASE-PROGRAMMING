@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<script>
+		function max_of_three(x, y, z) 
+ 		{
+  			var maximum = 0;
+  			if (x > y)
+  			{
+    			maximum = x;
+  			} 
+  			else
+  			{
+    			maximum = y;
+  			}
+  			if (z > maximum) 
+  			{
+    			maximum = z;
+  			}
+  			return maximum;
+		}
+
+		document.write(max_of_three(10,20,30));
+		document.write("<br />");
+		document.write(max_of_three(-86,85,105));
+		document.write("<br />");
+		document.write(max_of_three(654,850,20000));
+		document.write("<br />");
+	</script>
+</body>
+</html>
